@@ -9,37 +9,25 @@ class HeaderTwo extends Component {
     return (
       <header>
 
-      <Navbar inverse collapseOnSelect>
+      <Navbar className="header" collapseOnSelect fluid>
         <Navbar.Header>
             <Navbar.Brand>
-                <a href="#brand">React-Bootstrap</a>
+                <span>Andrew Thompson</span>
             </Navbar.Brand>
-            <Navbar.Toggle />
+        <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
-            <Nav>
-                <NavItem eventKey={1} href="#">
-                    Link
+        <Navbar.Collapse className="collapse-toggle">
+            <Nav className="header-nav" pullRight>
+                <NavItem className="header-item">
+                    <Link to = "/">Home</Link>
                 </NavItem>
-                <NavItem eventKey={2} href="#">
-                    Link
+                <NavItem className="header-item">
+                    <Link to = "/Photography">Photography</Link>
                 </NavItem>
-                <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                    <MenuItem eventKey={3.1}>Action</MenuItem>
-                    <MenuItem eventKey={3.2}>Another action</MenuItem>
-                    <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                </NavDropdown>
+                <NavItem className="header-item">
+                    <Link to = "/Contact">Contact</Link>
+                </NavItem>
             </Nav>
-            <Nav pullRight>
-              <NavItem eventKey={1} href="#">
-                Link Right
-              </NavItem>
-              <NavItem eventKey={2} href="#">
-                Link Right
-              </NavItem>
-              </Nav>
           </Navbar.Collapse>
       </Navbar>
 
