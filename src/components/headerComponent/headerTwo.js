@@ -9,7 +9,7 @@ class HeaderTwo extends Component {
     return (
       <header>
 
-      <Navbar className="header" collapseOnSelect fluid>
+      <Navbar className="header" collapseOnSelect fluid >
         <Navbar.Header>
             <Navbar.Brand>
                 <span>Andrew Thompson</span>

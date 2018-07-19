@@ -7,8 +7,8 @@
     .navbar-brand {
         float: left;
         color: $black;
-        font-size: 20px;
-        font-weight: 10;
+        font-size: 28px;
+        font-weight: 100;
         padding-left: 30px;
 
         &:hover {
@@ -51,6 +51,36 @@
             @include transition(.6s ease-in-out);
         }
     }
+}
+
+.footer {
+
+    bottom: 0;
+    background-color: #d9d9d9;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+
+    i {
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #666666;
+        padding: 2px;
+    }
+
+    .github{
+        float: right;
+        margin-right: 10px;
+        color: #666666;
+        font-size: 17px;
+    }
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #68a1fd;
 }
 
 // header{
@@ -106,29 +136,34 @@
 //     }
 // }
 
-footer{
-    position: relative;
-    display: block;
-    width: 100%;
-    background-color: #d9d9d9;
-    height: 40px;
-    font-size: 12px;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-
-    a{
-        color: #666666;
-        font-size: 17px;
-    }
-
-    i{
-        margin-left: 10px;
-        font-size: 12px;
-        font-weight: 300;
-        color: #666666;
-        padding: 2px;
-    }
-}
+// footer{
+//     position: fixed;
+//     bottom: 0;
+//     display: block;
+//     width: 100%;
+//     background-color: #d9d9d9;
+//     height: 60px;
+//     font-size: 12px;
+//     font-family: "Lato", sans-serif;
+//     font-weight: 300;
+//
+//     .footer-text {
+//
+//     }
+//
+//     a{
+//         color: #666666;
+//         font-size: 17px;
+//     }
+//
+//     i{
+//         margin-left: 10px;
+//         font-size: 12px;
+//         font-weight: 300;
+//         color: #666666;
+//         padding: 2px;
+//     }
+// }
 
 .repo{
     position: relative;
@@ -241,6 +276,12 @@ footer{
     font-size: 60px;
     i{
         padding: 20px;
+        @media(max-width: 1130px) {
+            padding-top: 60px;
+        }
+        @media(max-width: 1015px) {
+            padding-top: 90px;
+        }
     }
     i {
         text-decoration: none;
