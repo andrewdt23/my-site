@@ -1,6 +1,16 @@
 @import "_config.scss";
 @import url('https://fonts.googleapis.com/css?family=Lato.css');
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: block;
+}
+
 .header {
     background-color: #d9d9d9;
 
@@ -33,7 +43,7 @@
 
     .header-item {
         text-decoration: none;
-        @include transition(.6s ease-in-out);
+        @include transition(0.6s ease-in-out);
         cursor: pointer;
 
         a {
@@ -42,13 +52,13 @@
             font-weight: 1;
         }
 
-        &:hover{
+        &:hover {
             a {
                 color: $white;
-                @include transition(.6s ease-in-out);
+                @include transition(0.6s ease-in-out);
             }
             background-color: #68a1fd;
-            @include transition(.6s ease-in-out);
+            @include transition(0.6s ease-in-out);
         }
     }
 }
@@ -71,7 +81,7 @@
         padding: 2px;
     }
 
-    .github{
+    .github {
         float: right;
         margin-right: 10px;
         color: #666666;
@@ -83,7 +93,7 @@
     color: #68a1fd;
 }
 
-.repo{
+.repo {
     position: relative;
     display: inline-block;
     margin-left: 27%;
@@ -91,7 +101,6 @@
     font-family: "Lato", sans-serif;
     font-weight: 300;
 }
-
 // .container-fluid {
 //     background-image: url('https://wallpapertag.com/wallpaper/full/4/9/6/218672-beautiful-vintage-rustic-wood-background-3006x1727-for-windows.jpg');
 //     background-size: 800px 800px;
@@ -108,19 +117,17 @@
     }
 }
 
-.img-circle{
+.img-circle {
     border-radius: 50%;
     margin-left: 40px;
     margin-right: 30px;
     margin-top: 50px;
     height: 350px;
     width: 350px;
-
     @media(max-width: 900px) {
         display: block;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 0;
     }
-
     @media(max-width: 540px) {
         margin-top: 15px;
         height: 200px;
@@ -128,21 +135,20 @@
     }
 }
 
-.bio-wrapper{
+.bio-wrapper {
     margin-top: 150px;
-
+    overflow: hidden;
     @media(max-width: 900px) {
         margin-top: 15px;
     }
 }
 
-.Name{
+.Name {
     font-size: 38px;
     width: auto;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     line-height: 40px;
-
     @media(max-width: 900px) {
         display: block;
         text-align: center;
@@ -150,105 +156,103 @@
         line-height: 40px;
     }
 
-    i{
+    i {
         padding: 5px;
     }
 }
 
-.bio{
+.bio {
     margin-top: 10px;
     font-size: 23px;
     width: auto;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     line-height: 30px;
-
     @media(max-width: 900px) {
         font-size: 18px;
         text-align: center;
     }
 }
 
-.photos{
+.photos {
     position: relative;
     margin-top: 50px;
+    margin-bottom: 100px;
 
     img {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    @include transition(.6s ease-in-out);
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* For IE8 and earlier */
+        @include transition(0.6s ease-in-out);
     }
 
     img:hover {
         opacity: 1.0;
-        filter: alpha(opacity=100); /* For IE8 and earlier */
-        @include transition(.4s ease-in-out);
+        filter: alpha(opacity=100);
+        /* For IE8 and earlier */
+        @include transition(0.4s ease-in-out);
     }
 }
 
-.title{
+.title {
     position: relative;
-    margin-left: 33%;
-    margin-right: auto;
+    text-align: center;
+    font-size: 32px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
 
-    i{
+    i {
         padding: 5px;
     }
 }
 
-.hover{
-    position: absolute;
+.hover {
     font-size: 50px;
     top: 30%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     margin-left: 4%;
 
-    i{
+    i {
         padding-left: 10px;
     }
 }
 
-.description{
+.description {
     position: relative;
-    margin-left: 34%;
-    margin-right: auto;
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
 }
 
-.profile-links{
-    // margin-left: 50%;
+.profile-links {
     font-size: 60px;
     text-align: center;
-
+    margin-left: -100px;
     @media(max-width: 900px) {
         font-size: 55px;
         margin: 0;
         text-align: center;
     }
 
-    i{
-        padding: 20px;
-        // @media(max-width: 1130px) {
-        //     padding-top: 60px;
-        // }
-        // @media(max-width: 1015px) {
-        //     padding-top: 90px;
-        // }
+    a {
+        color: #68a1fd;
     }
+
+    i {
+        padding: 20px;
+    }
+
     i {
         text-decoration: none;
-        @include transition(.6s ease-in-out);
+        @include transition(0.6s ease-in-out);
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             color: $black;
-            @include transition(.6s ease-in-out);
+            @include transition(0.6s ease-in-out);
         }
     }
 }
@@ -257,86 +261,98 @@
     margin-top: 50px;
 }
 
-.site-creation{
+.site-creation {
     position: relative;
     font-size: 20px;
     margin-top: 9%;
-    margin-left: 40%;
+    // margin-left: 40%;
+    text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 300;
 }
 
-.site-details{
+.site-details {
     position: relative;
     font-size: 50px;
-    margin-left: 30%;
+    text-align: center;
+    // margin-left: 30%;
     margin-bottom: 2%;
-    color: rgb(41,122,252);
 
-    i{
+    a {
+        color: #68a1fd;
+    }
+    @media(max-width: 540px) {
+        font-size: 30px;
+    }
+
+    i {
         padding: 20px;
+        @media(max-width: 540px) {
+            padding: 10px;
+        }
     }
 
     i {
         text-decoration: none;
-        @include transition(.6s ease-in-out);
+        @include transition(0.6s ease-in-out);
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             color: $black;
-            //background-color: $white;
-            @include transition(.6s ease-in-out);
+            @include transition(0.6s ease-in-out);
         }
     }
 }
 
-.contact-title{
+.contact-title {
     position: relative;
-    margin-left: 27%;
+    text-align: center;
     padding-top: 2%;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    @media(max-width: 540px) {
+        font-size: 30px;
+    }
 }
 
-.contact-body{
+.contact-body {
     position: relative;
-    margin-left: 34%;
     text-align: center;
     padding-top: 2%;
-    width: 30%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
 
-    .github-button{
-        margin-left: 17%;
-        margin-bottom: 23%;
+    .github-button {
+        margin: 10px auto 50px;
     }
 
-    .linkedin-button{
-        margin-left: 10%;
-        margin-bottom: 18%;
+    .linkedin-button {
+        margin: 10px auto 50px;
     }
 
-    .email-button{
-        margin-bottom: 18%;
+    .email-button {
+        margin: 10px auto 50px;
     }
 
     button {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    background-color: white;
-    color: black;
-    border: 3px solid black;
-    border-radius: 3px;
-    padding: 15px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
-    margin: 3%;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+        border-radius: 3px;
+        padding: 15px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        @media(max-width: 540px) {
+            font-size: 18px;
+            padding: 15px 30px;
+        }
     }
 
     button:hover {

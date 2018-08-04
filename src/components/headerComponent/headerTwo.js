@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import{
     Link
 }from 'react-router-dom';
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 class HeaderTwo extends Component {
   render() {
@@ -12,7 +12,7 @@ class HeaderTwo extends Component {
       <Navbar className="header" collapseOnSelect fluid >
         <Navbar.Header>
             <Navbar.Brand>
-                <span>Andrew Thompson</span>
+                <Link to = "/">Andrew Thompson</Link>
             </Navbar.Brand>
         <Navbar.Toggle />
         </Navbar.Header>
