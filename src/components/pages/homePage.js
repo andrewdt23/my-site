@@ -7,7 +7,7 @@ class Homepage extends Component {
           <div className="profile-picture">
             <img src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113794672291/medium/1522344307595/enhance" alt="Profile" class = "img-circle"/>
           </div>
-          <div className = "description">
+          <div className = "bio-wrapper">
                 <p className="Name">
                     Welcome to Andrew Thompson's Webpage!
                     <i class="far fa-hand-peace"></i>
