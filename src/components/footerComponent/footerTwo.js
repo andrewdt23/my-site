@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import{
-    Link
-}from 'react-router-dom';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 class FooterTwo extends Component {
   render() {
     return (
-      <footer>
+    <footer className="footer-wrapper">
 
-      <Navbar className="footer" fluid staticBottom>
+      <Navbar className="footer" fluid staticBottom >
         <Navbar.Header>
             <Navbar.Collapse>
                 <Navbar.Brand>
@@ -18,14 +15,14 @@ class FooterTwo extends Component {
                 </Navbar.Brand>
             </Navbar.Collapse>
         </Navbar.Header>
-        <Nav className="header-nav" pullRight>
+        <Nav className="footer-nav" pullRight>
             <NavItem className="github" href="https://github.com/andrewdt23/my-site">
              Check out the Github repo for this site
              </NavItem>
         </Nav>
       </Navbar>
 
-      </footer>
+  </footer>
     );
   }
 }

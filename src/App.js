@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Header from './components/headerComponent/header';
 import HeaderTwo from './components/headerComponent/headerTwo';
-import Footer from './components/footerComponent/footer';
 import FooterTwo from './components/footerComponent/footerTwo';
 import Homepage from './components/pages/homePage';
 import Photography from './components/pages/photography';
@@ -18,14 +16,14 @@ class App extends Component {
     <Router>
           <div className="App">
             <HeaderTwo />
-                <Route exact path = '/' component = {Homepage} />
-                <Route exact path = '/Photography' component = {Photography} />
-                <Route exact path = '/Contact' component = {Contact} />
+            <Route exact path = '/' component = {Homepage} />
+            <Route exact path = '/Photography' component = {Photography} />
+            <Route exact path = '/Contact' component = {Contact} />
             <FooterTwo />
           </div>
     </Router>
     );
   }
-}//
+}
 
 export default App;
