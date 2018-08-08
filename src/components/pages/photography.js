@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Gallery from 'react-photo-gallery';
-import { Modal, Tooltip, OverlayTrigger, Button} from 'react-bootstrap'
+import { Modal, Button} from 'react-bootstrap'
 
 class Photography extends Component {
 
