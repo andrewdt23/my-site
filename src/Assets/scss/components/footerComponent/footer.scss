@@ -11,7 +11,10 @@
     font-weight: 300;
     margin: 0;
     padding: 0;
-    opacity: 0.8;
+    opacity: 0.9;
+    @media(max-width: 590px) {
+        opacity: 1;
+    }
 
     i {
         margin-left: 10px;
