@@ -5,6 +5,10 @@ body,
 html {
     margin: 0;
     padding: 0;
+
+    .modal-open {
+        overflow-y: scroll !important;
+    }
 }
 
 .App {
@@ -174,10 +178,22 @@ html {
     }
 }
 
+.photo-modal {
+    position: absolute;
+    top: 30%;
+}
+
 .photos {
     position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
+
+    .images {
+        padding-left: 5px;
+        @media(max-width: 900px) {
+            padding-left: 3px;
+        }
+    }
 
     img {
         opacity: 0.5;
@@ -259,6 +275,30 @@ html {
 
 .creation-wrapper {
     margin-top: 50px;
+}
+
+.more {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 80px;
+    @media (max-width: 900px) {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    animation: floating 2s ease-in-out infinite;
+    @keyframes floating {
+        from {
+            transform: translate(0, 0px);
+        }
+
+        65% {
+            transform: translate(0, 25px);
+        }
+
+        to {
+            transform: translate(0, -0px);
+        }
+    }
 }
 
 .site-creation {

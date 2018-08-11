@@ -17,9 +17,9 @@ class Photography extends Component {
     }
 
     render() {
-        let numColumns = 3;
+        let numColumns = 2;
         return (<div>
-            <Modal show={this.state.showModal} onHide={this.handleClose}>
+            <Modal className="photo-modal" show={this.state.showModal} onHide={this.handleClose}>
                 <Modal.Header closeButton="closeButton">
                     <Modal.Title>Pro Tip</Modal.Title>
                 </Modal.Header>

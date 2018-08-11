@@ -26,6 +26,11 @@ class Homepage extends Component {
                     </a>
                 </div>
             </div>
+            <div className="more">
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </div>
+            <div className="site-purpose">
+            </div>
             <div className="site-creation">
                 This site was created using:
             </div>
