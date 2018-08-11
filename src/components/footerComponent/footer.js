@@ -15,7 +15,7 @@ class Footer extends Component {
                     </Navbar.Collapse>
                 </Navbar.Header>
                 <Nav className="footer-nav" pullRight="pullRight">
-                    <NavItem className="github" href="https://github.com/andrewdt23/my-site">
+                    <NavItem className="github" href="https://github.com/andrewdt23/my-site" target="__blank">
                         Check out the Github repo for this site
                     </NavItem>
                 </Nav>
