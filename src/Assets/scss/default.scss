@@ -49,15 +49,18 @@ html {
         text-decoration: none;
         @include transition(0.6s ease-in-out);
         cursor: pointer;
+        outline: none;
 
         a {
             color: $black;
             font-size: 20px;
             font-weight: 1;
+            outline: none;
         }
 
         &:hover {
             a {
+                outline: none;
                 color: $white;
                 @include transition(0.6s ease-in-out);
             }
@@ -76,6 +79,7 @@ html {
     font-weight: 300;
     margin: 0;
     padding: 0;
+    opacity: 0.9;
 
     i {
         margin-left: 10px;
@@ -186,7 +190,7 @@ html {
 .photos {
     position: relative;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     .images {
         padding-left: 5px;
@@ -301,11 +305,45 @@ html {
     }
 }
 
+.site-purpose {
+    margin-top: 80px;
+
+    .purpose-title {
+        font-size: 38px;
+        width: auto;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .purpose-description {
+        font-size: 20px;
+        width: auto;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        line-height: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+
+        a {
+            font-weight: bold;
+            color: #68a1fd;
+            @include transition(0.6s ease-in-out);
+
+            &:hover {
+                color: black;
+                @include transition(0.6s ease-in-out);
+            }
+        }
+    }
+}
+
 .site-creation {
     position: relative;
     font-size: 20px;
-    margin-top: 9%;
-    // margin-left: 40%;
+    margin-top: 100px;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -315,8 +353,7 @@ html {
     position: relative;
     font-size: 50px;
     text-align: center;
-    // margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 50px;
 
     a {
         color: #68a1fd;

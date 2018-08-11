@@ -47,14 +47,18 @@ class Photography extends Component {
         </div>);
     }
 }
-
 const PHOTO_SET = [
     {
-        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113792591732/medium/1522207282/enhance',
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010871515/medium/1533963254892/enhance',
         width: 3,
         height: 2
     }, {
         src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113792592714/medium/1522207333/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113792591732/medium/1522207282/enhance',
         width: 3,
         height: 2
     }, {
@@ -67,6 +71,36 @@ const PHOTO_SET = [
         height: 2
     }, {
         src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113792592878/medium/1522207341/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010871507/medium/1533963348296/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010871510/medium/1533963428724/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113794799474/medium/1522351299/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010871491/small/1533963702796/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010874854/medium/1533963732864/enhance',
+        width: 3,
+        height: 2
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010874887/medium/1533963754756/enhance',
         width: 3,
         height: 2
     }

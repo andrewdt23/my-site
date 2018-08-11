@@ -5,7 +5,7 @@ class FooterTwo extends Component {
     render() {
         return (<footer className="footer-wrapper">
 
-            <Navbar className="footer" fluid="fluid" staticBottom="staticBottom">
+            <Navbar className="footer" fluid="fluid" fixedBottom="fixedBottom">
                 <Navbar.Header>
                     <Navbar.Collapse>
                         <Navbar.Brand>
