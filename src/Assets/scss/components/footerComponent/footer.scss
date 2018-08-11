@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato.css');
 @import "../../vars/colors.scss";
 
+.full-footer {
+    @media(max-width: 590px) {
+        display: none;
+    }
+}
+
+.mobile-footer {
+    display: none;
+    @media(max-width: 590px) {
+        display: block;
+    }
+}
+
 .footer {
     display: block;
     bottom: 0;
