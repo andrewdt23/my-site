@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import HeaderTwo from './components/headerComponent/headerTwo';
-import FooterTwo from './components/footerComponent/footerTwo';
+import Header from './components/headerComponent/header';
+import Footer from './components/footerComponent/footer';
 import Homepage from './components/pages/homePage';
 import Photography from './components/pages/photography';
 import Contact from './components/pages/contact';
@@ -13,11 +13,11 @@ class App extends Component {
     render() {
         return (<Router>
             <div className="App">
-                <HeaderTwo/>
+                <Header/>
                 <Route exact="exact" path='/' component={Homepage}/>
                 <Route exact="exact" path='/Photography' component={Photography}/>
                 <Route exact="exact" path='/Contact' component={Contact}/>
-                <FooterTwo/>
+                <Footer/>
             </div>
         </Router>);
     }

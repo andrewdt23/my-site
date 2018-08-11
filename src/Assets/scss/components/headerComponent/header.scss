@@ -1,0 +1,58 @@
+@import "../../_config.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato.css');
+@import "../../vars/colors.scss";
+
+.header {
+    background-color: $site-color-grey;
+
+    .navbar-brand {
+        float: left;
+        color: black;
+        font-size: 28px;
+        font-weight: 100;
+        padding-left: 30px;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .collapse-toggle {
+        float: right;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .container {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .header-item {
+        text-decoration: none;
+        @include transition(0.6s ease-in-out);
+        cursor: pointer;
+        outline: none;
+
+        a {
+            color: black;
+            font-size: 20px;
+            font-weight: 1;
+            outline: none;
+        }
+
+        &:hover {
+            a {
+                outline: none;
+                color: white;
+                @include transition(0.6s ease-in-out);
+            }
+            background-color: $site-color-blue;
+            @include transition(0.6s ease-in-out);
+        }
+    }
+}

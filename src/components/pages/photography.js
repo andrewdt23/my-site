@@ -16,34 +16,48 @@ class Photography extends Component {
         this.setState({showModal: false});
     }
 
-    render() {
+    renderModal() {
+        return (
+            <div>
+                <Modal className="photo-modal" show={this.state.showModal} onHide={this.handleClose}>
+                    <Modal.Header closeButton="closeButton">
+                        <Modal.Title>Pro Tip</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p>
+                            Hover or tap on a photo to highlight it in the gallery.
+                        </p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.handleClose}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+            </div>
+        );
+    }
+
+    renderContent() {
         let numColumns = 2;
-        return (<div>
-            <Modal className="photo-modal" show={this.state.showModal} onHide={this.handleClose}>
-                <Modal.Header closeButton="closeButton">
-                    <Modal.Title>Pro Tip</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <p>
-                        Hover or tap on a photo to highlight it in the gallery.
-                    </p>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={this.handleClose}>Close</Button>
-                </Modal.Footer>
-            </Modal>
+        return (
             <div id="photography" className="photos">
-                <div className='title'>
+                <div className='photos-title'>
                     Andrew's Photography
                     <i class="fas fa-camera-retro"></i>
                 </div>
-                <p className='description'>
+                <p className='photos-description'>
                     All photos were taken by myself with my Canon T6.
                 </p>
                 <body className='images'>
                     <Gallery photos={PHOTO_SET} columns={numColumns}/>
                 </body>
             </div>
+        );
+    }
+
+    render() {
+        return (<div>
+            {this.renderModal()}
+            {this.renderContent()}
         </div>);
     }
 }

@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Navbar, Nav, NavItem} from 'react-bootstrap'
 
 class Footer extends Component {
-  render() {
-    return (
-      <footer>
-      <div className="footer-text">
-          <i class="far fa-copyright"></i>
-          <span className="footer-name">2018 Andrew Thompson</span>
-          <h1 className = "repo">
-         <a href="https://github.com/andrewdt23/my-site" target="_blank" rel="noopener noreferrer">
-          Check out the Github repo for this site
-          </a>
-          </h1>
-      </div>
-      </footer>
-    );
-  }
+    render() {
+        return (<footer className="footer-wrapper">
+
+            <Navbar className="footer" fluid="fluid" fixedBottom="fixedBottom">
+                <Navbar.Header>
+                    <Navbar.Collapse>
+                        <Navbar.Brand>
+                            <i class="far fa-copyright"></i>
+                            2018 Andrew Thompson
+                        </Navbar.Brand>
+                    </Navbar.Collapse>
+                </Navbar.Header>
+                <Nav className="footer-nav" pullRight="pullRight">
+                    <NavItem className="github" href="https://github.com/andrewdt23/my-site">
+                        Check out the Github repo for this site
+                    </NavItem>
+                </Nav>
+            </Navbar>
+        </footer>);
+    }
 }
 
 export default Footer;

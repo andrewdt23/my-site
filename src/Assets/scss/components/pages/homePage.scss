@@ -1,0 +1,204 @@
+@import "../../_config.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato.css');
+@import "../../vars/colors.scss";
+
+.profile-picture {
+    display: inline;
+    float: left;
+    @media(max-width: 900px) {
+        float: none;
+        display: inline;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.img-circle {
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-top: 50px;
+    height: 350px;
+    width: 350px;
+    @media(max-width: 900px) {
+        display: block;
+        margin: 30px auto 0;
+    }
+    @media(max-width: 540px) {
+        margin-top: 15px;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.bio-wrapper {
+    margin-top: 150px;
+    overflow: hidden;
+    @media(max-width: 900px) {
+        margin-top: 15px;
+    }
+}
+
+.Name {
+    font-size: 38px;
+    width: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    @media(max-width: 900px) {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    @media(max-width: 590px) {
+        font-size: 28px;
+    }
+
+    i {
+        padding: 5px;
+    }
+}
+
+.bio {
+    margin-top: 10px;
+    font-size: 23px;
+    width: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    @media(max-width: 900px) {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.profile-links {
+    font-size: 60px;
+    text-align: center;
+    margin-left: -100px;
+    @media(max-width: 900px) {
+        font-size: 55px;
+        margin: 0;
+        text-align: center;
+    }
+
+    a {
+        color: $site-color-blue;
+    }
+
+    i {
+        padding: 20px;
+    }
+
+    i {
+        text-decoration: none;
+        @include transition(0.6s ease-in-out);
+        cursor: pointer;
+
+        &:hover {
+            color: $black;
+            @include transition(0.6s ease-in-out);
+        }
+    }
+}
+
+.more {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 60px;
+    @media (max-width: 900px) {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    animation: floating 2s ease-in-out infinite;
+    @keyframes floating {
+        from {
+            transform: translate(0, 0px);
+        }
+
+        65% {
+            transform: translate(0, 25px);
+        }
+
+        to {
+            transform: translate(0, -0px);
+        }
+    }
+}
+
+.site-purpose {
+    margin-top: 80px;
+
+    .purpose-title {
+        font-size: 38px;
+        width: auto;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .purpose-description {
+        font-size: 20px;
+        width: auto;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        line-height: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+
+        a {
+            font-weight: bold;
+            color: $site-color-blue;
+            @include transition(0.6s ease-in-out);
+
+            &:hover {
+                color: black;
+                @include transition(0.6s ease-in-out);
+            }
+        }
+    }
+}
+
+.site-creation {
+    position: relative;
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.site-details {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    a {
+        color: $site-color-blue;
+    }
+    @media(max-width: 540px) {
+        font-size: 30px;
+    }
+
+    i {
+        padding: 20px;
+        @media(max-width: 540px) {
+            padding: 10px;
+        }
+    }
+
+    i {
+        text-decoration: none;
+        @include transition(0.6s ease-in-out);
+        cursor: pointer;
+
+        &:hover {
+            color: $black;
+            @include transition(0.6s ease-in-out);
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../_config.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato.css');
+@import "../../vars/colors.scss";
+
+.photos-title {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+
+    i {
+        padding: 5px;
+    }
+}
+
+.photos-description {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.photo-modal {
+    position: absolute;
+    top: 30%;
+}
+
+.photos {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .images {
+        padding-left: 5px;
+        @media(max-width: 900px) {
+            padding-left: 3px;
+        }
+    }
+
+    img {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* For IE8 and earlier */
+        @include transition(0.6s ease-in-out);
+    }
+
+    img:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+        /* For IE8 and earlier */
+        @include transition(0.4s ease-in-out);
+    }
+}
