@@ -5,7 +5,7 @@ class Contact extends Component {
     return (
       <div className = "container-fluid">
         <h1 className = 'contact-title'>
-        Contact Information/Resources
+        Contact/Resources
         </h1>
         <h2 className = 'contact-body'>
         Email:
