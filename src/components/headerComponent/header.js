@@ -22,7 +22,13 @@ class Header extends Component {
                     <Link to = "/">Home</Link>
                 </NavItem>
                 <NavItem className="header-item">
+                    <Link to = "/Projects">Projects</Link>
+                </NavItem>
+                <NavItem className="header-item">
                     <Link to = "/Photography">Photography</Link>
+                </NavItem>
+                <NavItem className="header-item">
+                    <Link to = "/Videos">Videos</Link>
                 </NavItem>
                 <NavItem className="header-item">
                     <Link to = "/Contact">Contact</Link>
