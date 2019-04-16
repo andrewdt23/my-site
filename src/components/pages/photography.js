@@ -45,7 +45,7 @@ class Photography extends Component {
                     <i class="fas fa-camera-retro"></i>
                 </div>
                 <p className='photos-description'>
-                    All photos were taken by myself with my Canon T6.
+                    All photos were taken with my Canon T6.
                 </p>
                 <body className='images'>
                     <Gallery photos={PHOTO_SET} columns={numColumns}/>
