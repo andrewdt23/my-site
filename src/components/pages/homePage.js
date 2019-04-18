@@ -74,17 +74,19 @@ class Homepage extends Component {
     }
 
     render() {
-        return (<div className="container-fluid">
+        return (<div className="container-fluid home">
             {this.renderProfilePicture()}
             {this.renderBio()}
             <div className="more">
                 <i class="fa fa-angle-double-down" aria-hidden="true"></i>
             </div>
             {this.renderPurpose()}
-            <div className="site-creation">
-                This site was created using:
+            <div className="site-details-container">
+                <div className="site-creation">
+                    This site was created using:
+                </div>
+                {this.renderSiteDetails()}
             </div>
-            {this.renderSiteDetails()}
         </div>);
     }
 }

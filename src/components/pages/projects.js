@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Projects extends Component {
   render() {
     return (
-      <div className = "container-fluid">
+      <div className = "container-fluid projects">
         <h1 className = 'project-title'>
         My Projects
         </h1>

@@ -2,12 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lato.css');
 @import "../../vars/colors.scss";
 
+html, body {
+    height: 100%;
+    background-color: $site-color-blue;
+}
+
 .photos-title {
     position: relative;
     text-align: center;
-    font-size: 32px;
+    color: white;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    padding-top: 30px;
+    font-size: 70px;
+    @media(max-width: 1000px) {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    @media(max-width: 600px) {
+        font-size: 20px;
+        padding-top: 10px;
+    }
 
     i {
         padding: 5px;
@@ -17,10 +32,18 @@
 .photos-description {
     position: relative;
     text-align: center;
+    color: white;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    font-size: 40px;
+    @media(max-width: 1000px) {
+        font-size: 20px;
+    }
+    @media(max-width: 600px) {
+        font-size: 15px;
+    }
 }
 
 .photo-modal {

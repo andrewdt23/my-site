@@ -40,13 +40,15 @@ class Photography extends Component {
         let numColumns = 2;
         return (
             <div id="photography" className="photos">
-                <div className='photos-title'>
-                    Andrew's Photography
-                    <i class="fas fa-camera-retro"></i>
+                <div className="title-wrapper">
+                    <div className='photos-title'>
+                        Andrew's Photography
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <p className='photos-description'>
+                        All photos were taken with my Canon T6.
+                    </p>
                 </div>
-                <p className='photos-description'>
-                    All photos were taken with my Canon T6.
-                </p>
                 <body className='images'>
                     <Gallery photos={PHOTO_SET} columns={numColumns}/>
                 </body>

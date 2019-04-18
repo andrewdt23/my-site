@@ -2,8 +2,25 @@
 @import url('https://fonts.googleapis.com/css?family=Lato.css');
 @import "../../vars/colors.scss";
 
+.navbar {
+    border: none;
+    border-radius: 0;
+}
+
 .header {
-    background-color: $site-color-grey;
+    background-color: white;
+    margin: 0;
+    border-radius: 0;
+
+    .navbar-toggle {
+        padding: 32px;
+        border-color: white;
+
+        &:hover {
+            background-color: white;
+            border-color: white;
+        }
+    }
 
     .navbar-brand {
         float: left;
@@ -11,9 +28,27 @@
         font-size: 28px;
         font-weight: 100;
         padding-left: 30px;
+        padding-top: 40px;
+
+        @media(max-width: 840px) {
+            font-size: 22px;
+        }
+
+        @media(max-width: 767px) {
+            font-size: 28px;
+        }
+
+        @media(max-width: 360px) {
+            font-size: 22px;
+        }
+
+        text-decoration: none;
+        @include transition(0.6s ease-in-out);
+        cursor: pointer;
 
         &:hover {
-            color: black;
+            color: $site-color-blue;
+            @include transition(0.6s ease-in-out);
         }
     }
 
@@ -37,6 +72,22 @@
         @include transition(0.6s ease-in-out);
         cursor: pointer;
         outline: none;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        @media(max-width: 1100px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @media(max-width: 950px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media(max-width: 767px) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
 
         a {
             color: black;

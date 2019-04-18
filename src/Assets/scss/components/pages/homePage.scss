@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato.css');
 @import "../../vars/colors.scss";
 
+.home {
+    background-color: $site-color-5;
+}
+
 .profile-picture {
     display: inline;
     float: left;
@@ -45,6 +49,7 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     line-height: 40px;
+    color: white;
     @media(max-width: 900px) {
         display: block;
         text-align: center;
@@ -66,6 +71,7 @@
     width: auto;
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    color: white;
     line-height: 30px;
     @media(max-width: 900px) {
         font-size: 18px;
@@ -84,7 +90,7 @@
     }
 
     a {
-        color: $site-color-blue;
+        color: white;
     }
 
     i {
@@ -107,7 +113,8 @@
     text-align: center;
     font-size: 80px;
     margin-top: 60px;
-    text-shadow: 0 8px $site-color-blue;
+    color: white;
+    text-shadow: 0 8px black;
     @media (max-width: 900px) {
         margin-top: 20px;
         margin-bottom: 50px;
@@ -130,6 +137,7 @@
 
 .site-purpose {
     margin-top: 80px;
+    color: white;
     @media (max-width: 590px) {
         margin-top: 20px;
     }
@@ -155,7 +163,7 @@
 
         a {
             font-weight: bold;
-            color: $site-color-blue;
+            color: white;
             @include transition(0.6s ease-in-out);
 
             &:hover {
@@ -170,6 +178,7 @@
     position: relative;
     font-size: 20px;
     margin-top: 100px;
+    color: white;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -188,7 +197,7 @@
     }
 
     a {
-        color: $site-color-blue;
+        color: white;
     }
     @media(max-width: 540px) {
         font-size: 30px;
