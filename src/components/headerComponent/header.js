@@ -19,19 +19,19 @@ class Header extends Component {
         <Navbar.Collapse className="collapse-toggle">
             <Nav className="header-nav" pullRight>
                 <NavItem className="header-item">
-                    <Link to = "/">Home</Link>
+                    <Link className='header-link' to = "/">Home</Link>
                 </NavItem>
                 <NavItem className="header-item">
-                    <Link to = "/Projects">Projects</Link>
+                    <Link className='header-link' to = "/Projects">Projects</Link>
                 </NavItem>
                 <NavItem className="header-item">
-                    <Link to = "/Photography">Photography</Link>
+                    <Link className='header-link' to = "/Photography">Photography</Link>
                 </NavItem>
                 <NavItem className="header-item">
-                    <Link to = "/Videos">Videos</Link>
+                    <Link className='header-link' to = "/Videos">Videos</Link>
                 </NavItem>
                 <NavItem className="header-item">
-                    <Link to = "/Contact">Contact</Link>
+                    <Link className='header-link' to = "/Contact">Contact</Link>
                 </NavItem>
             </Nav>
           </Navbar.Collapse>
