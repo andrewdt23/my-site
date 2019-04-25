@@ -68,7 +68,13 @@ const PHOTO_SET = [
         src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010871515/medium/1533963254892/enhance',
         width: 3,
         height: 2
-    }, {
+    },
+    {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114516245437/large/1556227515/enhance',
+        width: 3,
+        height: 2
+    },
+    {
         src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113792592714/medium/1522207333/enhance',
         width: 3,
         height: 2
@@ -102,11 +108,6 @@ const PHOTO_SET = [
     },
     {
         src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113794799474/medium/1522351299/enhance',
-        width: 3,
-        height: 2
-    },
-    {
-        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114010871491/small/1533963702796/enhance',
         width: 3,
         height: 2
     },
