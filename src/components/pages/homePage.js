@@ -18,7 +18,7 @@ class Homepage extends Component {
                     <span className="peace"><i class="far fa-hand-peace"></i></span>
                 </p>
                 <p className="bio">
-                    Andrew is currently an undergraduate computer engineering student at UC Santa Barbara. His interests include web develeopment, computer vision, and embedded systems. In his free time, he enjoys photography, playing the guitar, and spending time with family and friends.
+                    Andrew is currently a BS/MS computer science student at UC Santa Barbara. His interests include web applications, mobile development, and system security. In his free time, he enjoys photography, playing the guitar, and spending time with family and friends.
                 </p>
                 <div className="profile-links">
                     <a href="https://www.linkedin.com/in/andrew-thompson-baab56148/" target="_blank" rel="noopener noreferrer">
