@@ -37,6 +37,7 @@
 
 .bio-wrapper {
     margin-top: 150px;
+    text-align: justify;
     overflow: hidden;
     @media(max-width: 900px) {
         margin-top: 15px;
@@ -138,6 +139,7 @@
 .site-purpose {
     margin-top: 80px;
     color: white;
+    text-align: justify;
     @media (max-width: 590px) {
         margin-top: 20px;
     }

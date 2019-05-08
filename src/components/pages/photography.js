@@ -46,7 +46,7 @@ class Photography extends Component {
                         <i class="fas fa-camera-retro"></i>
                     </div>
                     <p className='photos-description'>
-                        All photos were taken with my Canon T6.
+                        All photos were taken with my Canon T6 or DJI Spark.
                     </p>
                 </div>
                 <body className='images'>
@@ -81,6 +81,14 @@ const PHOTO_SET = [
     },
     {
         src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/113792591732/medium/1522207282/enhance',
+        width: 3,
+        height: 2
+    }, {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114534844094/large/1557336494/enhance',
+        width: 3,
+        height: 2
+    }, {
+        src: 'https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114534844430/large/1557336509/enhance',
         width: 3,
         height: 2
     }, {

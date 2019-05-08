@@ -27,6 +27,82 @@ html, body {
     font-family: "Lato", sans-serif;
     font-weight: 300;
 
+    .spotify-title {
+        color: white;
+        margin: auto;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 60px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        line-height: 50px;
+        @media(max-width: 1000px) {
+            font-size: 40px;
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+    }
+
+    .spotify-photo {
+        width: 80%;
+        margin: auto;
+
+        img {
+            width: 100%;
+
+            @include transition(0.3s ease-in-out);
+
+            &:hover {
+                opacity: 0.7;
+                @include transition(0.3s ease-in-out);
+            }
+        }
+    }
+
+    .spotify-body {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: justify;
+
+        .spotify-description {
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 50px;
+
+            @media(max-width: 1500px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @media(max-width: 1000px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media(max-width: 500px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .tidal-title {
+        color: white;
+        margin: auto;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 60px;
+        padding-top: 150px;
+        padding-bottom: 60px;
+        @media(max-width: 1000px) {
+            font-size: 40px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+    }
+
     .tidal-photo {
         width: 80%;
         margin: auto;
@@ -46,13 +122,14 @@ html, body {
     .tidal-body {
         padding-top: 40px;
         padding-bottom: 20px;
+        text-align: justify;
 
         .tidal-description {
             color: white;
             font-family: "Lato", sans-serif;
             font-weight: 300;
-            font-size: 60px;
-            line-height: 70px;
+            font-size: 40px;
+            line-height: 50px;
 
             @media(max-width: 1500px) {
                 font-size: 40px;
