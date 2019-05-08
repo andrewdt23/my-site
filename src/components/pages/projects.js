@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ResponsiveEmbed from 'react-responsive-embed'
 
 class Projects extends Component {
   render() {
@@ -12,11 +13,14 @@ class Projects extends Component {
                 <div className='spotify-title'>
                     Spotify Virtual Record Player
                 </div>
-                <a href="https://tidal.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <div className='spotify-media'>
                     <img src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/022023533722/media/114534843979/large/1557336487/enhance" alt="Spotify Virtual Record Player"/>
-                </a>
+                    <div className='spotify-video' style={{position: 'relative', display: 'inline-block', height: '0px', overflow: 'hidden', maxWidth: '50%', minWidth: '50%', paddingBottom: '32%'}}>
+                        <iframe frameborder="0" class="spotify-video" src="https://www.youtube.com/embed/LEMDEE8djKg" allowfullscreen="" style={{paddingLeft: '2%', position: 'absolute', top: '0px', left: '0px', width: '100%', height: '100%'}}></iframe>
+                    </div>
+                </div>
                 <div className='spotify-body'>
-                    <p className='spotify-description'></p>
+                    <p className='spotify-description'>A virtual record player I built with a Raspberry Pi, RFID cards, and Spotify. The application consists of <a className="gotostage" href="https://www.pimusicbox.com/" target="_blank" rel="noopener noreferrer">PiMusicBox</a> and <a className="gotostage" href="https://github.com/fsahli/music-cards" target="_blank" rel="noopener noreferrer">this</a> open source project which I expanded and tailored for this project. </p>
                 </div>
             </div>
             <div className='tidal-photo'>
